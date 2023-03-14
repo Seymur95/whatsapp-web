@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Rauf Eliyev",
+        "text": "Hello",
+        "time": "12:05",
+        "img": "https://picsum.photos/200"
+    },
+    {
+        "name": "Orxan Cabbarov",
+        "text": "What is up?",
+        "time": "15:47",
+        "img": "https://picsum.photos/200nb"
+    },
+    {
+        "name": "Ceyhun Agayev",
+        "text": "How it is going?",
+        "time": "20:14",
+        "img": "https://picsum.photos/200"
+    },
+    {
+        "name": "Natiq Semedov",
+        "text": "I am home",
+        "time": "14:18",
+        "img": "https://picsum.photos/200"
+    },
+    {
+        "name": "Emil Huseynov",
+        "text": "Where are you?",
+        "time": "09:35",
+        "img": "https://picsum.photos/200"
+    },
+    {
+        "name": "Elmir Orucov",
+        "text": "Everything is ok",
+        "time": "18:00",
+        "img": "https://picsum.photos/200"
+    }
+]
