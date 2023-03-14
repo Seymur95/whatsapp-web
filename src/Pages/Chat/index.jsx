@@ -5,7 +5,7 @@ import { TbCircleDashed } from 'react-icons/tb'
 import { RiMessage2Fill } from 'react-icons/ri'
 import { BiDotsVerticalRounded } from 'react-icons/bi'
 import { Button, Col, Image, Layout, Row, Space } from 'antd';
-import { Archive, Search, UserInfo, ChatUser } from '../../Components'
+import { Archive, Search, UserInfo, ChatUser, MessageInput } from '../../Components'
 const { Header, Footer, Sider, Content } = Layout;
 
 
@@ -47,8 +47,12 @@ const Index = () => {
         <Header style={{ backgroundColor: '#F0F2F5', lineHeight: 0, paddingInline: 5, borderLeft: '1px solid #EEEEEE' }}>
           <ChatUser name='Ali Aliyev' status='online' img='https://picsum.photos/200' />
         </Header>
-        <Content style={{ backgroundColor: '##E2DAD7' }}>Content</Content>
-        <Footer style={{ backgroundColor: '#F0F2F5' }}>Footer</Footer>
+
+        <Content style={{ backgroundColor: '##E2DAD7', height: 'calc(100% - 144px)' }}>Content</Content>
+
+        <Footer style={{ backgroundColor: '#F0F2F5', padding: 20 }}>
+          <MessageInput />
+        </Footer>
       </Layout>
     </Layout>
   )
