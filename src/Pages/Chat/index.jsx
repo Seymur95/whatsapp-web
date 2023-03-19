@@ -5,7 +5,7 @@ import { TbCircleDashed } from 'react-icons/tb'
 import { RiMessage2Fill } from 'react-icons/ri'
 import { BiDotsVerticalRounded } from 'react-icons/bi'
 import { Button, Col, Image, Layout, Row, Space } from 'antd';
-import { Archive, Search, UserInfo, ChatUser, MessageInput } from '../../Components'
+import { Archive, Search, UserInfo, ChatUser, MessageInput, MessageText } from '../../Components'
 const { Header, Footer, Sider, Content } = Layout;
 
 
@@ -35,7 +35,7 @@ const Index = () => {
 
         <Search />
 
-        <Content style={{ height: 'calc(100% - 109px)', overflow: 'auto', backgroundColor: '##E2DAD7' }}>
+        <Content style={{ height: 'calc(100% - 109px)', overflow: 'auto', backgroundColor: '#FFFFFF' }}>
           <Archive count={10} />
           {Users.map((value, index) => (
             <UserInfo key={index} name={value.name} text={value.text} img={value.img} time={value.time} />
@@ -44,11 +44,21 @@ const Index = () => {
       </Sider>
 
       <Layout>
-        <Header style={{ backgroundColor: '#F0F2F5', lineHeight: 0, paddingInline: 5, borderLeft: '1px solid #EEEEEE' }}>
+        <Header style={{ backgroundColor: '#F0F2F5', lineHeight: 0, paddingInline: 0, borderLeft: '1px solid #EEEEEE' }}>
           <ChatUser name='Ali Aliyev' status='online' img='https://picsum.photos/200' />
         </Header>
 
-        <Content style={{ backgroundColor: '##E2DAD7', height: 'calc(100% - 144px)' }}>Content</Content>
+        <Content style={{ backgroundColor: '#EFEAE2', height: 'calc(100% - 144px)', padding: 20, overflow: 'auto' }}>
+          <MessageText status={1} message='Hello' time='14:10' user={true} />
+          <MessageText status={2} message='Where are you' time='18:25' user={false} />
+          <MessageText status={3} message='I am at work' time='20:37' user={true} />
+          <MessageText status={1} message='Hello' time='14:10' user={true} />
+          <MessageText status={2} message='Where are you' time='18:25' user={false} />
+          <MessageText status={3} message='I am at work' time='20:37' user={true} />
+          <MessageText status={1} message='Hello' time='14:10' user={true} />
+          <MessageText status={2} message='Where are you' time='18:25' user={false} />
+          <MessageText status={3} message='I am at work' time='20:37' user={true} />
+        </Content>
 
         <Footer style={{ backgroundColor: '#F0F2F5', padding: 20 }}>
           <MessageInput />

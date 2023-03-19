@@ -15,7 +15,7 @@ const Index = () => {
                     onBlur={() => setSearch(false)}
                     size="large"
                     placeholder="Search or start new chat"
-                    prefix={search ? <BiLeftArrowAlt /> : <BiSearchAlt2 />} />
+                    prefix={search ? <BiLeftArrowAlt size={20} /> : <BiSearchAlt2 size={20} />} />
             </Col>
             <Col span={3}>
                 <Button type='text' size='large' icon={<BiFilter style={{ color: '#54656F' }} />}></Button>

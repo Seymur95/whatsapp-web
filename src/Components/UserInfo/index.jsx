@@ -44,7 +44,10 @@ const Index = ({ name, text, img, time }) => {
             <Col span={5}>
                 <Space direction='vertical' style={{ display: 'flex', alignItems: 'flex-end' }}>
                     <Typography.Text level={5} style={{ margin: 0 }}>{time}</Typography.Text>
-                    {status ? <Button type='text' icon={<DownOutlined />}></Button> : <Button type='link' style={{ color: 'transparent' }} ></Button>}
+                    {status ?
+                        <Button type='text' icon={<DownOutlined />}></Button>
+                        :
+                        <Button type='link' style={{ color: 'transparent' }} ></Button>}
                 </Space>
             </Col>
         </Row>
