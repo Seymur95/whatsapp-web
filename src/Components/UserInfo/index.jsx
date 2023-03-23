@@ -24,7 +24,7 @@ const Index = ({ name, text, img, time }) => {
             onMouseOver={show}
             onMouseOut={hidden}
         >
-            <Col span={4}>
+            <Col span={3}>
                 <Image
                     width={40}
                     preview={false}
@@ -33,7 +33,7 @@ const Index = ({ name, text, img, time }) => {
                     onError={onError}
                 />
             </Col>
-            <Col span={15}>
+            <Col span={16}>
                 <Typography.Title level={5} style={{ margin: 0 }}>
                     {name}
                 </Typography.Title>
@@ -45,9 +45,9 @@ const Index = ({ name, text, img, time }) => {
                 <Space direction='vertical' style={{ display: 'flex', alignItems: 'flex-end' }}>
                     <Typography.Text level={5} style={{ margin: 0 }}>{time}</Typography.Text>
                     {status ?
-                        <Button type='text' icon={<DownOutlined />}></Button>
+                        <Button type='text' icon={<DownOutlined />} />
                         :
-                        <Button type='link' style={{ color: 'transparent' }} ></Button>}
+                        <Button type='link' style={{ color: 'transparent' }} />}
                 </Space>
             </Col>
         </Row>
